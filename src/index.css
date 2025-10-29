@@ -112,3 +112,34 @@
     letter-spacing: 0.05em;
   }
 }
+
+@keyframes clawScratch {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.animate-claw-scratch path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.animate-claw-scratch .animate-claw-1 {
+  animation: clawScratch 0.6s ease-out 0.1s forwards;
+}
+
+.animate-claw-scratch .animate-claw-2 {
+  animation: clawScratch 0.6s ease-out 0.25s forwards;
+}
+
+.animate-claw-scratch .animate-claw-3 {
+  animation: clawScratch 0.6s ease-out 0.4s forwards;
+}

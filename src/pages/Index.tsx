@@ -19,57 +19,88 @@ const Index = () => {
         <div className="fixed inset-0 z-50 bg-background flex items-center justify-center animate-fade-out-overlay">
           <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
             <svg 
-              className="absolute left-[-10%] top-1/2 -translate-y-1/2 w-64 h-64 opacity-0 animate-claw-1"
-              viewBox="0 0 200 200" 
+              className="absolute inset-0 w-full h-full"
+              viewBox="0 0 1200 800" 
+              preserveAspectRatio="xMidYMid slice"
               fill="none"
             >
-              <path 
-                d="M150 80 Q140 85, 130 90 Q120 95, 110 100 Q100 105, 90 110 L80 115" 
-                stroke="rgba(249, 115, 22, 0.8)" 
-                strokeWidth="8" 
-                strokeLinecap="round"
-                filter="drop-shadow(0 0 20px rgba(249, 115, 22, 0.9))"
-              />
-              <ellipse cx="160" cy="70" rx="25" ry="35" fill="rgba(249, 115, 22, 0.3)" transform="rotate(-30 160 70)" />
-              <ellipse cx="165" cy="65" rx="20" ry="30" fill="rgba(249, 115, 22, 0.4)" transform="rotate(-25 165 65)" />
-              <ellipse cx="170" cy="75" rx="22" ry="32" fill="rgba(249, 115, 22, 0.3)" transform="rotate(-35 170 75)" />
-              <path d="M155 60 Q145 50, 150 40 L165 50 Z" fill="rgba(249, 115, 22, 0.6)" />
-              <path d="M160 55 Q150 45, 155 35 L170 45 Z" fill="rgba(249, 115, 22, 0.6)" />
-              <path d="M165 65 Q155 55, 160 45 L175 55 Z" fill="rgba(249, 115, 22, 0.6)" />
+              <g className="animate-claw-scratch">
+                <path
+                  d="M 250 200 Q 350 250, 450 300 Q 550 350, 750 450 Q 850 500, 1050 600"
+                  stroke="none"
+                  fill="url(#clawGradient1)"
+                  className="animate-claw-1"
+                  style={{
+                    clipPath: 'polygon(0% 0%, 100% 0%, 99% 3%, 98% 1%, 97% 4%, 96% 2%, 95% 5%, 93% 3%, 90% 6%, 85% 4%, 80% 7%, 70% 5%, 60% 8%, 50% 6%, 40% 9%, 30% 7%, 20% 10%, 10% 8%, 5% 11%, 2% 9%, 0% 12%, 0% 88%, 2% 91%, 5% 89%, 10% 92%, 20% 90%, 30% 93%, 40% 91%, 50% 94%, 60% 92%, 70% 95%, 80% 93%, 85% 96%, 90% 94%, 93% 97%, 95% 95%, 96% 98%, 97% 96%, 98% 99%, 99% 97%, 100% 100%, 100% 0%)'
+                  }}
+                />
+                <path
+                  d="M 250 200 Q 350 250, 450 300 Q 550 350, 750 450 Q 850 500, 1050 600"
+                  stroke="rgba(249, 115, 22, 0.9)"
+                  strokeWidth="18"
+                  strokeLinecap="round"
+                  filter="drop-shadow(0 0 25px rgba(249, 115, 22, 1)) drop-shadow(0 0 50px rgba(249, 115, 22, 0.6))"
+                  className="animate-claw-1"
+                />
+                
+                <path
+                  d="M 280 260 Q 380 310, 480 360 Q 580 410, 780 510 Q 880 560, 1080 660"
+                  stroke="none"
+                  fill="url(#clawGradient2)"
+                  className="animate-claw-2"
+                  style={{
+                    clipPath: 'polygon(0% 0%, 100% 0%, 99% 4%, 98% 2%, 97% 5%, 96% 3%, 95% 6%, 93% 4%, 90% 7%, 85% 5%, 80% 8%, 70% 6%, 60% 9%, 50% 7%, 40% 10%, 30% 8%, 20% 11%, 10% 9%, 5% 12%, 2% 10%, 0% 13%, 0% 87%, 2% 90%, 5% 88%, 10% 91%, 20% 89%, 30% 92%, 40% 90%, 50% 93%, 60% 91%, 70% 94%, 80% 92%, 85% 95%, 90% 93%, 93% 96%, 95% 94%, 96% 97%, 97% 95%, 98% 98%, 99% 96%, 100% 100%, 100% 0%)'
+                  }}
+                />
+                <path
+                  d="M 280 260 Q 380 310, 480 360 Q 580 410, 780 510 Q 880 560, 1080 660"
+                  stroke="rgba(249, 115, 22, 0.9)"
+                  strokeWidth="18"
+                  strokeLinecap="round"
+                  filter="drop-shadow(0 0 25px rgba(249, 115, 22, 1)) drop-shadow(0 0 50px rgba(249, 115, 22, 0.6))"
+                  className="animate-claw-2"
+                />
+                
+                <path
+                  d="M 310 320 Q 410 370, 510 420 Q 610 470, 810 570 Q 910 620, 1110 720"
+                  stroke="none"
+                  fill="url(#clawGradient3)"
+                  className="animate-claw-3"
+                  style={{
+                    clipPath: 'polygon(0% 0%, 100% 0%, 99% 5%, 98% 3%, 97% 6%, 96% 4%, 95% 7%, 93% 5%, 90% 8%, 85% 6%, 80% 9%, 70% 7%, 60% 10%, 50% 8%, 40% 11%, 30% 9%, 20% 12%, 10% 10%, 5% 13%, 2% 11%, 0% 14%, 0% 86%, 2% 89%, 5% 87%, 10% 90%, 20% 88%, 30% 91%, 40% 89%, 50% 92%, 60% 90%, 70% 93%, 80% 91%, 85% 94%, 90% 92%, 93% 95%, 95% 93%, 96% 96%, 97% 94%, 98% 97%, 99% 95%, 100% 100%, 100% 0%)'
+                  }}
+                />
+                <path
+                  d="M 310 320 Q 410 370, 510 420 Q 610 470, 810 570 Q 910 620, 1110 720"
+                  stroke="rgba(249, 115, 22, 0.9)"
+                  strokeWidth="18"
+                  strokeLinecap="round"
+                  filter="drop-shadow(0 0 25px rgba(249, 115, 22, 1)) drop-shadow(0 0 50px rgba(249, 115, 22, 0.6))"
+                  className="animate-claw-3"
+                />
+              </g>
+              
+              <defs>
+                <linearGradient id="clawGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="rgba(249, 115, 22, 0)" />
+                  <stop offset="20%" stopColor="rgba(249, 115, 22, 0.6)" />
+                  <stop offset="80%" stopColor="rgba(249, 115, 22, 0.6)" />
+                  <stop offset="100%" stopColor="rgba(249, 115, 22, 0)" />
+                </linearGradient>
+                <linearGradient id="clawGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="rgba(249, 115, 22, 0)" />
+                  <stop offset="20%" stopColor="rgba(249, 115, 22, 0.6)" />
+                  <stop offset="80%" stopColor="rgba(249, 115, 22, 0.6)" />
+                  <stop offset="100%" stopColor="rgba(249, 115, 22, 0)" />
+                </linearGradient>
+                <linearGradient id="clawGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="rgba(249, 115, 22, 0)" />
+                  <stop offset="20%" stopColor="rgba(249, 115, 22, 0.6)" />
+                  <stop offset="80%" stopColor="rgba(249, 115, 22, 0.6)" />
+                  <stop offset="100%" stopColor="rgba(249, 115, 22, 0)" />
+                </linearGradient>
+              </defs>
             </svg>
-            
-            <div className="absolute top-[32%] left-0 h-12 w-[90%] origin-left scale-x-0 animate-claw-1 -rotate-[8deg]" style={{
-              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.4) 5%, rgba(249, 115, 22, 1) 12%, rgba(249, 115, 22, 1) 88%, rgba(249, 115, 22, 0.4) 95%, transparent 100%)',
-              boxShadow: '0 0 40px rgba(249, 115, 22, 0.8), 0 0 80px rgba(249, 115, 22, 0.4)',
-              clipPath: 'polygon(0% 30%, 1% 10%, 2% 25%, 3% 8%, 4% 20%, 5% 5%, 6% 18%, 8% 3%, 10% 15%, 12% 0%, 14% 12%, 95% 0%, 96% 10%, 97% 3%, 98% 15%, 99% 8%, 100% 20%, 99% 88%, 98% 95%, 97% 90%, 96% 97%, 95% 92%, 93% 100%, 14% 100%, 12% 95%, 10% 98%, 8% 92%, 6% 97%, 5% 90%, 4% 95%, 3% 88%, 2% 93%, 1% 85%, 0% 90%)'
-            }} />
-            
-            <div className="absolute top-[32%] left-0 h-12 w-[90%] origin-left scale-x-0 animate-claw-1 -rotate-[8deg] opacity-50" style={{
-              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 10%, transparent 100%)',
-              filter: 'blur(15px)'
-            }} />
-            
-            <div className="absolute top-[48%] left-0 h-12 w-[92%] origin-left scale-x-0 animate-claw-2 -rotate-[4deg]" style={{
-              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.4) 5%, rgba(249, 115, 22, 1) 12%, rgba(249, 115, 22, 1) 88%, rgba(249, 115, 22, 0.4) 95%, transparent 100%)',
-              boxShadow: '0 0 40px rgba(249, 115, 22, 0.8), 0 0 80px rgba(249, 115, 22, 0.4)',
-              clipPath: 'polygon(0% 35%, 1% 15%, 2% 28%, 3% 12%, 4% 24%, 5% 8%, 6% 20%, 8% 5%, 10% 18%, 12% 2%, 14% 15%, 95% 2%, 96% 12%, 97% 5%, 98% 18%, 99% 10%, 100% 22%, 99% 85%, 98% 92%, 97% 88%, 96% 95%, 95% 90%, 93% 98%, 14% 98%, 12% 93%, 10% 96%, 8% 90%, 6% 95%, 5% 88%, 4% 93%, 3% 86%, 2% 91%, 1% 82%, 0% 88%)'
-            }} />
-            
-            <div className="absolute top-[48%] left-0 h-12 w-[92%] origin-left scale-x-0 animate-claw-2 -rotate-[4deg] opacity-50" style={{
-              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 10%, transparent 100%)',
-              filter: 'blur(15px)'
-            }} />
-            
-            <div className="absolute top-[64%] left-0 h-12 w-[88%] origin-left scale-x-0 animate-claw-3 rotate-[1deg]" style={{
-              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.4) 5%, rgba(249, 115, 22, 1) 12%, rgba(249, 115, 22, 1) 88%, rgba(249, 115, 22, 0.4) 95%, transparent 100%)',
-              boxShadow: '0 0 40px rgba(249, 115, 22, 0.8), 0 0 80px rgba(249, 115, 22, 0.4)',
-              clipPath: 'polygon(0% 32%, 1% 12%, 2% 26%, 3% 10%, 4% 22%, 5% 6%, 6% 19%, 8% 4%, 10% 16%, 12% 1%, 14% 14%, 95% 1%, 96% 11%, 97% 4%, 98% 16%, 99% 9%, 100% 21%, 99% 86%, 98% 93%, 97% 89%, 96% 96%, 95% 91%, 93% 99%, 14% 99%, 12% 94%, 10% 97%, 8% 91%, 6% 96%, 5% 89%, 4% 94%, 3% 87%, 2% 92%, 1% 83%, 0% 89%)'
-            }} />
-            
-            <div className="absolute top-[64%] left-0 h-12 w-[88%] origin-left scale-x-0 animate-claw-3 rotate-[1deg] opacity-50" style={{
-              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 10%, transparent 100%)',
-              filter: 'blur(15px)'
-            }} />
           </div>
         </div>
       )}
