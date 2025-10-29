@@ -18,10 +18,36 @@ const Index = () => {
       {showIntro && (
         <div className="fixed inset-0 z-50 bg-background flex items-center justify-center animate-fade-out-overlay">
           <div className="relative w-full h-full flex items-center justify-center">
-            <div className="relative w-[90%] max-w-4xl h-48">
-              <div className="absolute top-[20%] left-0 h-2 w-full bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_30px_rgba(234,56,76,0.9)] origin-left scale-x-0 animate-claw-1 rounded-full" />
-              <div className="absolute top-[50%] left-0 h-2 w-full bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_30px_rgba(234,56,76,0.9)] origin-left scale-x-0 animate-claw-2 rounded-full" />
-              <div className="absolute top-[80%] left-0 h-2 w-full bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_30px_rgba(234,56,76,0.9)] origin-left scale-x-0 animate-claw-3 rounded-full" />
+            <div className="relative w-[95%] max-w-6xl h-[60vh]">
+              <div className="absolute top-[25%] left-0 h-8 w-full origin-left scale-x-0 animate-claw-1" style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.2) 5%, rgba(249, 115, 22, 0.9) 48%, rgba(249, 115, 22, 1) 50%, rgba(249, 115, 22, 0.9) 52%, rgba(249, 115, 22, 0.2) 95%, transparent 100%)',
+                boxShadow: '0 0 60px rgba(249, 115, 22, 0.8), 0 0 120px rgba(249, 115, 22, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.5)'
+              }} />
+              
+              <div className="absolute top-[25%] left-[-2%] h-8 w-[104%] origin-left scale-x-0 animate-claw-1 opacity-30" style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 50%, transparent 100%)',
+                filter: 'blur(8px)'
+              }} />
+              
+              <div className="absolute top-[50%] left-0 h-8 w-full origin-left scale-x-0 animate-claw-2" style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.2) 5%, rgba(249, 115, 22, 0.9) 48%, rgba(249, 115, 22, 1) 50%, rgba(249, 115, 22, 0.9) 52%, rgba(249, 115, 22, 0.2) 95%, transparent 100%)',
+                boxShadow: '0 0 60px rgba(249, 115, 22, 0.8), 0 0 120px rgba(249, 115, 22, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.5)'
+              }} />
+              
+              <div className="absolute top-[50%] left-[-2%] h-8 w-[104%] origin-left scale-x-0 animate-claw-2 opacity-30" style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 50%, transparent 100%)',
+                filter: 'blur(8px)'
+              }} />
+              
+              <div className="absolute top-[75%] left-0 h-8 w-full origin-left scale-x-0 animate-claw-3" style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.2) 5%, rgba(249, 115, 22, 0.9) 48%, rgba(249, 115, 22, 1) 50%, rgba(249, 115, 22, 0.9) 52%, rgba(249, 115, 22, 0.2) 95%, transparent 100%)',
+                boxShadow: '0 0 60px rgba(249, 115, 22, 0.8), 0 0 120px rgba(249, 115, 22, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.5)'
+              }} />
+              
+              <div className="absolute top-[75%] left-[-2%] h-8 w-[104%] origin-left scale-x-0 animate-claw-3 opacity-30" style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 50%, transparent 100%)',
+                filter: 'blur(8px)'
+              }} />
             </div>
           </div>
         </div>
@@ -38,8 +64,8 @@ const Index = () => {
                 45deg,
                 transparent,
                 transparent 10px,
-                rgba(234, 56, 76, 0.1) 10px,
-                rgba(234, 56, 76, 0.1) 20px
+                rgba(249, 115, 22, 0.1) 10px,
+                rgba(249, 115, 22, 0.1) 20px
               )`
             }}
           />
@@ -63,7 +89,7 @@ const Index = () => {
             <div className="flex gap-4 justify-center flex-wrap">
               <Button 
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-6 text-lg clip-corner shadow-[0_0_30px_rgba(234,56,76,0.5)] hover:shadow-[0_0_40px_rgba(234,56,76,0.7)] transition-all"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-6 text-lg clip-corner shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] transition-all"
               >
                 <Icon name="Zap" className="mr-2" size={24} />
                 Забронировать место
@@ -107,7 +133,7 @@ const Index = () => {
               ].map((item, idx) => (
                 <Card 
                   key={idx}
-                  className="p-8 bg-card border-2 border-border hover:border-primary transition-all clip-corner group hover:shadow-[0_0_30px_rgba(234,56,76,0.3)]"
+                  className="p-8 bg-card border-2 border-border hover:border-primary transition-all clip-corner group hover:shadow-[0_0_30px_rgba(249,115,22,0.3)]"
                 >
                   <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors">
                     <Icon name={item.icon} size={32} className="text-primary" />
@@ -222,7 +248,7 @@ const Index = () => {
             <div className="flex gap-6 justify-center items-center flex-wrap">
               <Button 
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-10 py-7 text-xl clip-corner shadow-[0_0_30px_rgba(234,56,76,0.5)]"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-10 py-7 text-xl clip-corner shadow-[0_0_30px_rgba(249,115,22,0.5)]"
               >
                 <Icon name="Smartphone" className="mr-2" size={28} />
                 Скачать приложение

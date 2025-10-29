@@ -86,19 +86,19 @@ export default {
 					}
 				},
 				'claw-slash-1': {
-					'0%': { transform: 'scaleX(0) rotate(-12deg)', transformOrigin: 'center left', opacity: '0' },
-					'50%': { opacity: '1' },
-					'100%': { transform: 'scaleX(1) rotate(-12deg)', transformOrigin: 'center left', opacity: '1' }
+					'0%': { transform: 'scaleX(0) rotate(-18deg)', transformOrigin: 'center left', opacity: '0', filter: 'blur(2px)' },
+					'30%': { opacity: '1', filter: 'blur(1px)' },
+					'100%': { transform: 'scaleX(1) rotate(-18deg)', transformOrigin: 'center left', opacity: '0.9', filter: 'blur(0px)' }
 				},
 				'claw-slash-2': {
-					'0%': { transform: 'scaleX(0) rotate(-6deg)', transformOrigin: 'center left', opacity: '0' },
-					'50%': { opacity: '1' },
-					'100%': { transform: 'scaleX(1) rotate(-6deg)', transformOrigin: 'center left', opacity: '1' }
+					'0%': { transform: 'scaleX(0) rotate(-9deg)', transformOrigin: 'center left', opacity: '0', filter: 'blur(2px)' },
+					'30%': { opacity: '1', filter: 'blur(1px)' },
+					'100%': { transform: 'scaleX(1) rotate(-9deg)', transformOrigin: 'center left', opacity: '0.9', filter: 'blur(0px)' }
 				},
 				'claw-slash-3': {
-					'0%': { transform: 'scaleX(0) rotate(0deg)', transformOrigin: 'center left', opacity: '0' },
-					'50%': { opacity: '1' },
-					'100%': { transform: 'scaleX(1) rotate(0deg)', transformOrigin: 'center left', opacity: '1' }
+					'0%': { transform: 'scaleX(0) rotate(0deg)', transformOrigin: 'center left', opacity: '0', filter: 'blur(2px)' },
+					'30%': { opacity: '1', filter: 'blur(1px)' },
+					'100%': { transform: 'scaleX(1) rotate(0deg)', transformOrigin: 'center left', opacity: '0.9', filter: 'blur(0px)' }
 				},
 				'reveal-content': {
 					'0%': { opacity: '0', transform: 'scale(1.1)' },
