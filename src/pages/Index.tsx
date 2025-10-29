@@ -17,38 +17,59 @@ const Index = () => {
     <div className="min-h-screen bg-background relative overflow-hidden">
       {showIntro && (
         <div className="fixed inset-0 z-50 bg-background flex items-center justify-center animate-fade-out-overlay">
-          <div className="relative w-full h-full flex items-center justify-center">
-            <div className="relative w-[95%] max-w-6xl h-[60vh]">
-              <div className="absolute top-[25%] left-0 h-8 w-full origin-left scale-x-0 animate-claw-1" style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.2) 5%, rgba(249, 115, 22, 0.9) 48%, rgba(249, 115, 22, 1) 50%, rgba(249, 115, 22, 0.9) 52%, rgba(249, 115, 22, 0.2) 95%, transparent 100%)',
-                boxShadow: '0 0 60px rgba(249, 115, 22, 0.8), 0 0 120px rgba(249, 115, 22, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.5)'
-              }} />
-              
-              <div className="absolute top-[25%] left-[-2%] h-8 w-[104%] origin-left scale-x-0 animate-claw-1 opacity-30" style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 50%, transparent 100%)',
-                filter: 'blur(8px)'
-              }} />
-              
-              <div className="absolute top-[50%] left-0 h-8 w-full origin-left scale-x-0 animate-claw-2" style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.2) 5%, rgba(249, 115, 22, 0.9) 48%, rgba(249, 115, 22, 1) 50%, rgba(249, 115, 22, 0.9) 52%, rgba(249, 115, 22, 0.2) 95%, transparent 100%)',
-                boxShadow: '0 0 60px rgba(249, 115, 22, 0.8), 0 0 120px rgba(249, 115, 22, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.5)'
-              }} />
-              
-              <div className="absolute top-[50%] left-[-2%] h-8 w-[104%] origin-left scale-x-0 animate-claw-2 opacity-30" style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 50%, transparent 100%)',
-                filter: 'blur(8px)'
-              }} />
-              
-              <div className="absolute top-[75%] left-0 h-8 w-full origin-left scale-x-0 animate-claw-3" style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.2) 5%, rgba(249, 115, 22, 0.9) 48%, rgba(249, 115, 22, 1) 50%, rgba(249, 115, 22, 0.9) 52%, rgba(249, 115, 22, 0.2) 95%, transparent 100%)',
-                boxShadow: '0 0 60px rgba(249, 115, 22, 0.8), 0 0 120px rgba(249, 115, 22, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.5)'
-              }} />
-              
-              <div className="absolute top-[75%] left-[-2%] h-8 w-[104%] origin-left scale-x-0 animate-claw-3 opacity-30" style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 50%, transparent 100%)',
-                filter: 'blur(8px)'
-              }} />
-            </div>
+          <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
+            <svg 
+              className="absolute left-[-10%] top-1/2 -translate-y-1/2 w-64 h-64 opacity-0 animate-claw-1"
+              viewBox="0 0 200 200" 
+              fill="none"
+            >
+              <path 
+                d="M150 80 Q140 85, 130 90 Q120 95, 110 100 Q100 105, 90 110 L80 115" 
+                stroke="rgba(249, 115, 22, 0.8)" 
+                strokeWidth="8" 
+                strokeLinecap="round"
+                filter="drop-shadow(0 0 20px rgba(249, 115, 22, 0.9))"
+              />
+              <ellipse cx="160" cy="70" rx="25" ry="35" fill="rgba(249, 115, 22, 0.3)" transform="rotate(-30 160 70)" />
+              <ellipse cx="165" cy="65" rx="20" ry="30" fill="rgba(249, 115, 22, 0.4)" transform="rotate(-25 165 65)" />
+              <ellipse cx="170" cy="75" rx="22" ry="32" fill="rgba(249, 115, 22, 0.3)" transform="rotate(-35 170 75)" />
+              <path d="M155 60 Q145 50, 150 40 L165 50 Z" fill="rgba(249, 115, 22, 0.6)" />
+              <path d="M160 55 Q150 45, 155 35 L170 45 Z" fill="rgba(249, 115, 22, 0.6)" />
+              <path d="M165 65 Q155 55, 160 45 L175 55 Z" fill="rgba(249, 115, 22, 0.6)" />
+            </svg>
+            
+            <div className="absolute top-[30%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-1" style={{
+              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.3) 8%, rgba(249, 115, 22, 0.95) 15%, rgba(249, 115, 22, 1) 20%, rgba(249, 115, 22, 0.3) 98%, transparent 100%)',
+              boxShadow: '0 0 60px rgba(249, 115, 22, 0.9), 0 0 120px rgba(249, 115, 22, 0.5)',
+              clipPath: 'polygon(0% 20%, 2% 0%, 5% 30%, 8% 10%, 12% 40%, 15% 15%, 20% 45%, 25% 20%, 30% 50%, 40% 30%, 50% 55%, 60% 35%, 70% 60%, 80% 40%, 90% 65%, 95% 50%, 98% 70%, 100% 60%, 98% 80%, 95% 90%, 90% 75%, 80% 85%, 70% 80%, 60% 90%, 50% 85%, 40% 95%, 30% 90%, 20% 100%, 10% 90%, 5% 95%, 2% 85%, 0% 80%)'
+            }} />
+            
+            <div className="absolute top-[30%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-1 opacity-40" style={{
+              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.8) 15%, transparent 100%)',
+              filter: 'blur(12px)'
+            }} />
+            
+            <div className="absolute top-[48%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-2" style={{
+              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.3) 8%, rgba(249, 115, 22, 0.95) 15%, rgba(249, 115, 22, 1) 20%, rgba(249, 115, 22, 0.3) 98%, transparent 100%)',
+              boxShadow: '0 0 60px rgba(249, 115, 22, 0.9), 0 0 120px rgba(249, 115, 22, 0.5)',
+              clipPath: 'polygon(0% 25%, 2% 5%, 5% 35%, 8% 15%, 12% 45%, 15% 20%, 20% 50%, 25% 25%, 30% 55%, 40% 35%, 50% 60%, 60% 40%, 70% 65%, 80% 45%, 90% 70%, 95% 55%, 98% 75%, 100% 65%, 98% 85%, 95% 95%, 90% 80%, 80% 90%, 70% 85%, 60% 95%, 50% 90%, 40% 100%, 30% 95%, 20% 100%, 10% 95%, 5% 100%, 2% 90%, 0% 85%)'
+            }} />
+            
+            <div className="absolute top-[48%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-2 opacity-40" style={{
+              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.8) 15%, transparent 100%)',
+              filter: 'blur(12px)'
+            }} />
+            
+            <div className="absolute top-[66%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-3" style={{
+              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.3) 8%, rgba(249, 115, 22, 0.95) 15%, rgba(249, 115, 22, 1) 20%, rgba(249, 115, 22, 0.3) 98%, transparent 100%)',
+              boxShadow: '0 0 60px rgba(249, 115, 22, 0.9), 0 0 120px rgba(249, 115, 22, 0.5)',
+              clipPath: 'polygon(0% 15%, 2% 0%, 5% 25%, 8% 5%, 12% 35%, 15% 10%, 20% 40%, 25% 15%, 30% 45%, 40% 25%, 50% 50%, 60% 30%, 70% 55%, 80% 35%, 90% 60%, 95% 45%, 98% 65%, 100% 55%, 98% 75%, 95% 85%, 90% 70%, 80% 80%, 70% 75%, 60% 85%, 50% 80%, 40% 90%, 30% 85%, 20% 95%, 10% 85%, 5% 90%, 2% 80%, 0% 75%)'
+            }} />
+            
+            <div className="absolute top-[66%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-3 opacity-40" style={{
+              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.8) 15%, transparent 100%)',
+              filter: 'blur(12px)'
+            }} />
           </div>
         </div>
       )}
@@ -77,8 +98,8 @@ const Index = () => {
               </span>
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground tracking-tight">
-              KIBER<span className="text-primary">PRIDE</span>
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
+              <span className="text-white">KIBER</span><span className="text-foreground">PRIDE</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto font-light">
@@ -286,7 +307,7 @@ const Index = () => {
         <footer className="py-12 px-4 bg-card/30 border-t-2 border-border">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-4xl font-bold mb-4">
-              KIBER<span className="text-primary">PRIDE</span>
+              <span className="text-white">KIBER</span><span className="text-foreground">PRIDE</span>
             </div>
             <p className="text-muted-foreground text-sm">
               © 2024 KIBERPRIDE. Сеть игровых клубов. Все права защищены.
