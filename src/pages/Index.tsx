@@ -9,7 +9,7 @@ const Index = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowIntro(false);
-    }, 1600);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -17,10 +17,12 @@ const Index = () => {
     <div className="min-h-screen bg-background relative overflow-hidden">
       {showIntro && (
         <div className="fixed inset-0 z-50 bg-background flex items-center justify-center animate-fade-out-overlay">
-          <div className="relative w-full h-full">
-            <div className="absolute top-[20%] left-[10%] h-1 w-[80%] bg-primary shadow-[0_0_20px_rgba(234,56,76,0.8)] origin-left scale-x-0 animate-claw-1" />
-            <div className="absolute top-[30%] left-[5%] h-1 w-[85%] bg-primary shadow-[0_0_20px_rgba(234,56,76,0.8)] origin-left scale-x-0 animate-claw-2" />
-            <div className="absolute top-[40%] left-[8%] h-1 w-[82%] bg-primary shadow-[0_0_20px_rgba(234,56,76,0.8)] origin-left scale-x-0 animate-claw-3" />
+          <div className="relative w-full h-full flex items-center justify-center">
+            <div className="relative w-[90%] max-w-4xl h-48">
+              <div className="absolute top-[20%] left-0 h-2 w-full bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_30px_rgba(234,56,76,0.9)] origin-left scale-x-0 animate-claw-1 rounded-full" />
+              <div className="absolute top-[50%] left-0 h-2 w-full bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_30px_rgba(234,56,76,0.9)] origin-left scale-x-0 animate-claw-2 rounded-full" />
+              <div className="absolute top-[80%] left-0 h-2 w-full bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_30px_rgba(234,56,76,0.9)] origin-left scale-x-0 animate-claw-3 rounded-full" />
+            </div>
           </div>
         </div>
       )}
@@ -50,7 +52,7 @@ const Index = () => {
             </div>
             
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground tracking-tight">
-              GAME<span className="text-primary">ZONE</span>
+              KIBER<span className="text-primary">PRIDE</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto font-light">
@@ -170,7 +172,7 @@ const Index = () => {
                 
                 <div className="bg-background/50 p-4 clip-corner border border-secondary/30">
                   <p className="text-sm text-muted-foreground">
-                    Скачай приложение GAMEZONE в App Store или Google Play
+                    Скачай приложение KIBERPRIDE в App Store или Google Play
                   </p>
                 </div>
               </Card>
@@ -214,7 +216,7 @@ const Index = () => {
             </h2>
             
             <p className="text-xl text-muted-foreground mb-12">
-              Присоединяйся к тысячам игроков, которые уже выбрали GAMEZONE
+              Присоединяйся к тысячам игроков, которые уже выбрали KIBERPRIDE
             </p>
 
             <div className="flex gap-6 justify-center items-center flex-wrap">
@@ -258,10 +260,10 @@ const Index = () => {
         <footer className="py-12 px-4 bg-card/30 border-t-2 border-border">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-4xl font-bold mb-4">
-              GAME<span className="text-primary">ZONE</span>
+              KIBER<span className="text-primary">PRIDE</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              © 2024 GAMEZONE. Сеть игровых клубов. Все права защищены.
+              © 2024 KIBERPRIDE. Сеть игровых клубов. Все права защищены.
             </p>
           </div>
         </footer>

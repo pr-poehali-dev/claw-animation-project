@@ -86,16 +86,19 @@ export default {
 					}
 				},
 				'claw-slash-1': {
-					'0%': { transform: 'scaleX(0) rotate(-15deg)', transformOrigin: 'top left' },
-					'100%': { transform: 'scaleX(1) rotate(-15deg)', transformOrigin: 'top left' }
+					'0%': { transform: 'scaleX(0) rotate(-12deg)', transformOrigin: 'center left', opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { transform: 'scaleX(1) rotate(-12deg)', transformOrigin: 'center left', opacity: '1' }
 				},
 				'claw-slash-2': {
-					'0%': { transform: 'scaleX(0) rotate(-10deg)', transformOrigin: 'top left' },
-					'100%': { transform: 'scaleX(1) rotate(-10deg)', transformOrigin: 'top left' }
+					'0%': { transform: 'scaleX(0) rotate(-6deg)', transformOrigin: 'center left', opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { transform: 'scaleX(1) rotate(-6deg)', transformOrigin: 'center left', opacity: '1' }
 				},
 				'claw-slash-3': {
-					'0%': { transform: 'scaleX(0) rotate(-5deg)', transformOrigin: 'top left' },
-					'100%': { transform: 'scaleX(1) rotate(-5deg)', transformOrigin: 'top left' }
+					'0%': { transform: 'scaleX(0) rotate(0deg)', transformOrigin: 'center left', opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { transform: 'scaleX(1) rotate(0deg)', transformOrigin: 'center left', opacity: '1' }
 				},
 				'reveal-content': {
 					'0%': { opacity: '0', transform: 'scale(1.1)' },
@@ -109,11 +112,11 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'claw-1': 'claw-slash-1 0.5s ease-out 0.2s forwards',
-				'claw-2': 'claw-slash-2 0.5s ease-out 0.35s forwards',
-				'claw-3': 'claw-slash-3 0.5s ease-out 0.5s forwards',
-				'reveal': 'reveal-content 0.6s ease-out 1s forwards',
-				'fade-out-overlay': 'fade-out 0.4s ease-out 1.2s forwards'
+				'claw-1': 'claw-slash-1 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s forwards',
+				'claw-2': 'claw-slash-2 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s forwards',
+				'claw-3': 'claw-slash-3 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.7s forwards',
+				'reveal': 'reveal-content 0.8s ease-out 1.3s forwards',
+				'fade-out-overlay': 'fade-out 0.5s ease-out 1.5s forwards'
 			}
 		}
 	},
