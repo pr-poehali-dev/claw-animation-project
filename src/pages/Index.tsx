@@ -106,11 +106,20 @@ const Index = () => {
       )}
 
       <div className={`opacity-0 animate-reveal ${!showIntro ? 'opacity-100' : ''}`}>
-        <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
+        <section className="relative min-h-screen flex items-start justify-center px-4 overflow-hidden pt-16">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&q=80)',
+              filter: 'blur(8px) brightness(0.4)',
+              transform: 'scale(1.1)'
+            }}
+          />
+          
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background/80" />
           
           <div 
-            className="absolute inset-0 opacity-20"
+            className="absolute inset-0 opacity-10"
             style={{
               backgroundImage: `repeating-linear-gradient(
                 45deg,
@@ -122,18 +131,18 @@ const Index = () => {
             }}
           />
 
-          <div className="relative z-10 max-w-6xl mx-auto text-center">
-            <div className="inline-block mb-8 px-6 py-2 bg-primary/20 border-2 border-primary clip-corner">
+          <div className="relative z-10 max-w-6xl mx-auto text-center mt-12">
+            <div className="inline-block mb-8 px-6 py-2 bg-primary/30 backdrop-blur-sm border-2 border-primary clip-corner">
               <span className="text-primary font-bold tracking-wider uppercase text-sm">
                 Сеть игровых клубов
               </span>
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-              <span className="text-white">KIBER</span><span className="text-foreground">PRIDE</span>
+            <h1 className="text-7xl md:text-9xl font-bold mb-6 tracking-tight drop-shadow-[0_0_40px_rgba(249,115,22,0.8)]">
+              <span className="text-white">KIBER</span><span className="text-primary">PRIDE</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto font-light">
+            <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light drop-shadow-lg">
               Твоя территория побед. Мощные компьютеры, максимальный комфорт, 
               легендарная атмосфера.
             </p>
@@ -141,7 +150,7 @@ const Index = () => {
             <div className="flex gap-4 justify-center flex-wrap">
               <Button 
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-6 text-lg clip-corner shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] transition-all"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-6 text-lg clip-corner shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] transition-all backdrop-blur-sm"
               >
                 <Icon name="Zap" className="mr-2" size={24} />
                 Забронировать место
@@ -150,7 +159,7 @@ const Index = () => {
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-2 border-primary text-foreground hover:bg-primary/10 font-bold px-8 py-6 text-lg clip-corner"
+                className="border-2 border-primary text-white hover:bg-primary/20 font-bold px-8 py-6 text-lg clip-corner backdrop-blur-sm"
               >
                 <Icon name="Gift" className="mr-2" size={24} />
                 Получить бонусы
