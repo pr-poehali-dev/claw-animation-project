@@ -99,7 +99,7 @@ const Index = () => {
             </div>
             
             <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-              <span className="text-white">KIBER</span><span className="text-foreground">PRIDE</span>
+              <span className="text-white">Kiber</span><span className="text-foreground">Pride</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto font-light">
@@ -307,10 +307,10 @@ const Index = () => {
         <footer className="py-12 px-4 bg-card/30 border-t-2 border-border">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-4xl font-bold mb-4">
-              <span className="text-white">KIBER</span><span className="text-foreground">PRIDE</span>
+              <span className="text-white">Kiber</span><span className="text-foreground">Pride</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              © 2024 KIBERPRIDE. Сеть игровых клубов. Все права защищены.
+              © 2024 KiberPride. Сеть игровых клубов. Все права защищены.
             </p>
           </div>
         </footer>
