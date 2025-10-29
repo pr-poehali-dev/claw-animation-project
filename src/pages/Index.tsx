@@ -38,37 +38,37 @@ const Index = () => {
               <path d="M165 65 Q155 55, 160 45 L175 55 Z" fill="rgba(249, 115, 22, 0.6)" />
             </svg>
             
-            <div className="absolute top-[30%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-1" style={{
-              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.3) 8%, rgba(249, 115, 22, 0.95) 15%, rgba(249, 115, 22, 1) 20%, rgba(249, 115, 22, 0.3) 98%, transparent 100%)',
-              boxShadow: '0 0 60px rgba(249, 115, 22, 0.9), 0 0 120px rgba(249, 115, 22, 0.5)',
-              clipPath: 'polygon(0% 20%, 2% 0%, 5% 30%, 8% 10%, 12% 40%, 15% 15%, 20% 45%, 25% 20%, 30% 50%, 40% 30%, 50% 55%, 60% 35%, 70% 60%, 80% 40%, 90% 65%, 95% 50%, 98% 70%, 100% 60%, 98% 80%, 95% 90%, 90% 75%, 80% 85%, 70% 80%, 60% 90%, 50% 85%, 40% 95%, 30% 90%, 20% 100%, 10% 90%, 5% 95%, 2% 85%, 0% 80%)'
+            <div className="absolute top-[32%] left-0 h-12 w-[90%] origin-left scale-x-0 animate-claw-1 -rotate-[8deg]" style={{
+              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.4) 5%, rgba(249, 115, 22, 1) 12%, rgba(249, 115, 22, 1) 88%, rgba(249, 115, 22, 0.4) 95%, transparent 100%)',
+              boxShadow: '0 0 40px rgba(249, 115, 22, 0.8), 0 0 80px rgba(249, 115, 22, 0.4)',
+              clipPath: 'polygon(0% 30%, 1% 10%, 2% 25%, 3% 8%, 4% 20%, 5% 5%, 6% 18%, 8% 3%, 10% 15%, 12% 0%, 14% 12%, 95% 0%, 96% 10%, 97% 3%, 98% 15%, 99% 8%, 100% 20%, 99% 88%, 98% 95%, 97% 90%, 96% 97%, 95% 92%, 93% 100%, 14% 100%, 12% 95%, 10% 98%, 8% 92%, 6% 97%, 5% 90%, 4% 95%, 3% 88%, 2% 93%, 1% 85%, 0% 90%)'
             }} />
             
-            <div className="absolute top-[30%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-1 opacity-40" style={{
-              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.8) 15%, transparent 100%)',
-              filter: 'blur(12px)'
+            <div className="absolute top-[32%] left-0 h-12 w-[90%] origin-left scale-x-0 animate-claw-1 -rotate-[8deg] opacity-50" style={{
+              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 10%, transparent 100%)',
+              filter: 'blur(15px)'
             }} />
             
-            <div className="absolute top-[48%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-2" style={{
-              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.3) 8%, rgba(249, 115, 22, 0.95) 15%, rgba(249, 115, 22, 1) 20%, rgba(249, 115, 22, 0.3) 98%, transparent 100%)',
-              boxShadow: '0 0 60px rgba(249, 115, 22, 0.9), 0 0 120px rgba(249, 115, 22, 0.5)',
-              clipPath: 'polygon(0% 25%, 2% 5%, 5% 35%, 8% 15%, 12% 45%, 15% 20%, 20% 50%, 25% 25%, 30% 55%, 40% 35%, 50% 60%, 60% 40%, 70% 65%, 80% 45%, 90% 70%, 95% 55%, 98% 75%, 100% 65%, 98% 85%, 95% 95%, 90% 80%, 80% 90%, 70% 85%, 60% 95%, 50% 90%, 40% 100%, 30% 95%, 20% 100%, 10% 95%, 5% 100%, 2% 90%, 0% 85%)'
+            <div className="absolute top-[48%] left-0 h-12 w-[92%] origin-left scale-x-0 animate-claw-2 -rotate-[4deg]" style={{
+              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.4) 5%, rgba(249, 115, 22, 1) 12%, rgba(249, 115, 22, 1) 88%, rgba(249, 115, 22, 0.4) 95%, transparent 100%)',
+              boxShadow: '0 0 40px rgba(249, 115, 22, 0.8), 0 0 80px rgba(249, 115, 22, 0.4)',
+              clipPath: 'polygon(0% 35%, 1% 15%, 2% 28%, 3% 12%, 4% 24%, 5% 8%, 6% 20%, 8% 5%, 10% 18%, 12% 2%, 14% 15%, 95% 2%, 96% 12%, 97% 5%, 98% 18%, 99% 10%, 100% 22%, 99% 85%, 98% 92%, 97% 88%, 96% 95%, 95% 90%, 93% 98%, 14% 98%, 12% 93%, 10% 96%, 8% 90%, 6% 95%, 5% 88%, 4% 93%, 3% 86%, 2% 91%, 1% 82%, 0% 88%)'
             }} />
             
-            <div className="absolute top-[48%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-2 opacity-40" style={{
-              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.8) 15%, transparent 100%)',
-              filter: 'blur(12px)'
+            <div className="absolute top-[48%] left-0 h-12 w-[92%] origin-left scale-x-0 animate-claw-2 -rotate-[4deg] opacity-50" style={{
+              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 10%, transparent 100%)',
+              filter: 'blur(15px)'
             }} />
             
-            <div className="absolute top-[66%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-3" style={{
-              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.3) 8%, rgba(249, 115, 22, 0.95) 15%, rgba(249, 115, 22, 1) 20%, rgba(249, 115, 22, 0.3) 98%, transparent 100%)',
-              boxShadow: '0 0 60px rgba(249, 115, 22, 0.9), 0 0 120px rgba(249, 115, 22, 0.5)',
-              clipPath: 'polygon(0% 15%, 2% 0%, 5% 25%, 8% 5%, 12% 35%, 15% 10%, 20% 40%, 25% 15%, 30% 45%, 40% 25%, 50% 50%, 60% 30%, 70% 55%, 80% 35%, 90% 60%, 95% 45%, 98% 65%, 100% 55%, 98% 75%, 95% 85%, 90% 70%, 80% 80%, 70% 75%, 60% 85%, 50% 80%, 40% 90%, 30% 85%, 20% 95%, 10% 85%, 5% 90%, 2% 80%, 0% 75%)'
+            <div className="absolute top-[64%] left-0 h-12 w-[88%] origin-left scale-x-0 animate-claw-3 rotate-[1deg]" style={{
+              background: 'linear-gradient(90deg, rgba(249, 115, 22, 0) 0%, rgba(249, 115, 22, 0.4) 5%, rgba(249, 115, 22, 1) 12%, rgba(249, 115, 22, 1) 88%, rgba(249, 115, 22, 0.4) 95%, transparent 100%)',
+              boxShadow: '0 0 40px rgba(249, 115, 22, 0.8), 0 0 80px rgba(249, 115, 22, 0.4)',
+              clipPath: 'polygon(0% 32%, 1% 12%, 2% 26%, 3% 10%, 4% 22%, 5% 6%, 6% 19%, 8% 4%, 10% 16%, 12% 1%, 14% 14%, 95% 1%, 96% 11%, 97% 4%, 98% 16%, 99% 9%, 100% 21%, 99% 86%, 98% 93%, 97% 89%, 96% 96%, 95% 91%, 93% 99%, 14% 99%, 12% 94%, 10% 97%, 8% 91%, 6% 96%, 5% 89%, 4% 94%, 3% 87%, 2% 92%, 1% 83%, 0% 89%)'
             }} />
             
-            <div className="absolute top-[66%] left-0 h-10 w-[95%] origin-left scale-x-0 animate-claw-3 opacity-40" style={{
-              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.8) 15%, transparent 100%)',
-              filter: 'blur(12px)'
+            <div className="absolute top-[64%] left-0 h-12 w-[88%] origin-left scale-x-0 animate-claw-3 rotate-[1deg] opacity-50" style={{
+              background: 'linear-gradient(90deg, transparent 0%, rgba(249, 115, 22, 0.6) 10%, transparent 100%)',
+              filter: 'blur(15px)'
             }} />
           </div>
         </div>
